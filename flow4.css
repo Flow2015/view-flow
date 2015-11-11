@@ -1,0 +1,50 @@
+body {
+  background: #2D3737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg.graph {
+  height: 75%;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg.graph .grid {
+  stroke: white;
+  stroke-dasharray: 1 2;
+  stroke-width: 1;
+}
+
+svg.graph .points {
+  stroke: white;
+  stroke-width: 3;
+}
+
+svg.graph .first_set.points {
+  fill: #D74108;
+}
+
+svg.graph .first_set {
+  fill: url(#MyGradient);
+}
+
+svg.graph .surfaces {
+  fill-opacity: .5;
+}
+
+svg.graph .line polyline {
+  stroke: #FF7832;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.interaction line {
+  stroke: #9E9494;
+  display: block;
+}
